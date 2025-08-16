@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at top, #1e1e2f, #0d0d1d);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  .ai-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    gap: 40px;
+  }
+  
+  .ai-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .ai-logo {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .ai-card h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #81d4fa;
+  }
+  
+  .ai-subtext {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .ai-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ai-card input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #ffffff10;
+    color: #eee;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #3c3c50;
+  }
+  
+  .ai-card input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .ai-card input::placeholder {
+    color: #bbb;
+  }
+  
+  .ai-card button {
+    background: #3f86f4;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .ai-card button:hover:not(:disabled) {
+    background-color: #2563eb;
+  }
+  
+  .ai-card button:disabled {
+    background-color: #6b7280;
+    cursor: not-allowed;
+  }
+  
+  .toggle-auth {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #aaa;
+  }
+  
+  .toggle-auth span {
+    color: #81d4fa;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  
+  .toggle-auth span:hover {
+    text-decoration: underline;
+  }
+  
+  .ai-illustration {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .ai-illustration img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(129, 212, 250, 0.2);
+  }
+  
+  .tagline {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ddd;
+    font-style: italic;
+  }
+  
+  /* Error Message Styles */
+  .error-message {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #fca5a5;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .error-message strong {
+    color: #f87171;
+  }
+  
+  .error-message small {
+    color: #d1d5db;
+    font-size: 12px;
+    margin-top: 8px;
+    display: block;
+  }
+  
+  /* Debug Information Styles */
+  .debug-info {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 6px;
+    font-size: 11px;
+    color: #93c5fd;
+    text-align: left;
+  }
+  
+  .debug-info small {
+    line-height: 1.4;
+  }
+  

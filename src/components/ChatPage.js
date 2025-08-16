@@ -35,7 +35,7 @@ const ChatPage = () => {
     setMessage("");
 
     try {
-      const response = await axios.post("http://localhost:5000/api/chatbot/conversation", {
+      const response = await axios.post("https://google-ads-frontend.vercel.app/api/chatbot/conversation", {
         message,
         sessionId,
       });
@@ -106,3 +106,4 @@ const ChatPage = () => {
 };
 
 export default ChatPage;
+

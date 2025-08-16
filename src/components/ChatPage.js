@@ -13,7 +13,7 @@ const ChatPage = () => {
   useEffect(() => {
     if (sessionId) {
       axios
-        .get(`http://localhost:5000/api/chatbot/sessionId/${sessionId}`)
+        .get(`https://google-ads-backend-e28g.onrender.com/api/chatbot/sessionId/${sessionId}`)
         .then((response) => {
           setConversation(response.data.conversation);
         })
@@ -35,7 +35,7 @@ const ChatPage = () => {
     setMessage("");
 
     try {
-      const response = await axios.post("https://google-ads-frontend.vercel.app/api/chatbot/conversation", {
+      const response = await axios.post("https://google-ads-backend-e28g.onrender.com/api/chatbot/conversation", {
         message,
         sessionId,
       });
@@ -106,4 +106,5 @@ const ChatPage = () => {
 };
 
 export default ChatPage;
+
 

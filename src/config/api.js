@@ -3,7 +3,7 @@ const isDevelopment = process.env.NODE_ENV === 'development' || window.location.
 
 const API_BASE_URL = isDevelopment 
   ? 'http://localhost:5000' 
-  : (process.env.REACT_APP_API_URL || 'https://your-backend-domain.com');
+  : (process.env.REACT_APP_API_URL || 'https://google-ads-backend-e28g.onrender.com');
 
 console.log('🔧 Environment:', process.env.NODE_ENV);
 console.log('🌐 API Base URL:', API_BASE_URL);
@@ -23,5 +23,6 @@ export const API_ENDPOINTS = {
     LAUNCH: `${API_BASE_URL}/api/campaign/launch`,
   },
 };
+
 
 export default API_BASE_URL; 
